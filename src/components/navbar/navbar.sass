@@ -1,1 +1,107 @@
+=nav-p
+    color: #fff
+    font-family: var(--font-family)
+    font-weight: 500
+    font-size: 18px
+    line-height: 25px
+    text-transform: capitalize
+    margin: 0 1rem
+    cursor: pointer
 
+=btn
+    padding: 0.5rem 1rem
+    color: #fff
+    font-family: var(--font-family)
+    font-weight: 500
+    font-size: 18px
+    line-height: 25px
+    background: #ff4820
+    border: none
+    border-radius: 5px
+    outline: none
+    cursor: pointer
+.gpt3
+    &__navbar
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        padding: 2rem 6rem
+
+    &__navbar-links
+        flex: 1
+        display: flex
+        justify-content: flex-start
+        align-items: center
+
+    &__navbar-links-logo
+        margin-right: 2rem
+
+        & img
+            width: 62.56px
+            height: 16.02px
+
+    &__navbar-links-container
+        display: flex
+        & p
+            +nav-p
+
+    &__navbar-sign
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        & p
+            +nav-p
+        & button
+            +btn
+    &__navbar-menu
+        margin-left: 1rem
+        display: none
+        position: relative
+        & svg
+            cursor: pointer
+    &__navbar-menu-container
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        flex-direction: column
+        text-align: end
+        background: var(--color-footer)
+        padding: 2rem
+        position: absolute
+        top: 40px
+        right: 0
+        margin-top: 1rem
+        min-width: 210px
+        border-radius: 5px
+        box-shadow: 0 0 5 rgba(0,0,0,0.2)
+        & p
+            +nav-p
+            margin: 1rem 0
+
+        & button
+            +btn
+    &__navbar-menu-container-links-sign
+        display: none
+
+@media screen and (max-width: 1050px)
+    .gpt3
+        &__navbar-links-container
+            display: none
+        &__navbar-menu
+            display: flex
+@media screen and (max-width: 700px)
+    .gpt3
+        &__navbar
+            padding: 2rem 4rem
+
+@media screen and (max-width: 550px)
+    .gpt3
+        &__navbar
+            padding: 2rem
+        &__navbar-sign
+            display: none
+        &__navbar-menu-container
+            top: 20px
+        &__navbar-menu-container-links-sign
+            display: block
