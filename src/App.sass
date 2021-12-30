@@ -7,17 +7,21 @@
 body
   background: var(--color-bg)
   min-width: 300px
+  overflow-x: hidden
 
 a
   color: unset
   text-decoration: none
 
 .gradient__bg
-  background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%)
-  background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%)
-  background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%)
-  background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%)
-  background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%)
+  background: #002853
+  filter: blur(564px)
+  position: absolute
+  top: -336px
+  left: -305px
+  width: 1013px
+  height: 1013px
+  z-index: -100
 
 .gradient__text
   background: var(--gradient-text)
